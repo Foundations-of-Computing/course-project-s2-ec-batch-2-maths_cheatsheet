@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laplace Transforms</title>
+    <link rel="stylesheet" href="laplace.css">
+</head>
+<body>
+    <header>
+        <center><h2><b>LAPLACE TRANSFORMS</b></h2></center>
+        <center>
+            <input type="text" id="searchBar" placeholder="Search for a formula..." onkeyup="searchFormula()">
+        </center>
+    </header>
+    <p>Comprehensive list of Laplace Transform equations and properties:</p>
+    <main>
+
+        <section id="basic-laplace">
+            <h3>Basic Laplace Transforms</h3>
+            <ul>
+                <li><strong>ℒ{1} = 1/s</strong></li>
+                <li><strong>ℒ{t} = 1/s²</strong></li>
+                <li><strong>ℒ{e^(at)} = 1/(s - a)</strong></li>
+                <li><strong>ℒ{sin(at)} = a/(s² + a²)</strong></li>
+                <li><strong>ℒ{cos(at)} = s/(s² + a²)</strong></li>
+            </ul>
+        </section>
+
+        <section id="laplace-properties">
+            <h3>Properties of Laplace Transforms</h3>
+            <ul>
+                <li><strong>Linearity Property: ℒ{af(t) + bg(t)} = aℒ{f(t)} + bℒ{g(t)}</strong></li>
+                <li><strong>Time Shifting: ℒ{e^(at)f(t)} = F(s - a)</strong></li>
+                <li><strong>Scaling in the s-Domain: ℒ{f(at)} = F(s/a)</strong></li>
+            </ul>
+        </section>
+
+        <section id="inverse-laplace">
+            <h3>Inverse Laplace Transforms</h3>
+            <ul>
+                <li><strong>ℒ⁻¹{1/s} = 1</strong></li>
+                <li><strong>ℒ⁻¹{1/s²} = t</strong></li>
+                <li><strong>ℒ⁻¹{1/(s - a)} = e^(at)</strong></li>
+                <li><strong>ℒ⁻¹{a/(s² + a²)} = sin(at)</strong></li>
+                <li><strong>ℒ⁻¹{s/(s² + a²)} = cos(at)</strong></li>
+            </ul>
+        </section>
+
+        <section id="special-laplace">
+            <h3>Special Laplace Transforms</h3>
+            <ul>
+                <li><strong>ℒ{tⁿ} = n!/sⁿ⁺¹</strong></li>
+                <li><strong>ℒ{sin²(at)} = a/(s² + 2a²)</strong></li>
+                <li><strong>ℒ{cos²(at)} = s/(s² + 2a²)</strong></li>
+            </ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<script src="laplace.js"></script>

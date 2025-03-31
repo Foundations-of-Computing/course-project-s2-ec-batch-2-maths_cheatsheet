@@ -1,0 +1,63 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #111;
+  align-items: center;
+}
+
+.Heading {
+  font-size: 60px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.subhead{
+  color: white;
+}
+
+@keyframes gradientBackground {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+p, .intro ul li {
+  color: #fff;
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.interactive-btn {
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 10px;
+  box-shadow: 0 4px 10px rgba(0, 255, 255, 0.5); 
+  transition: all 0.3s ease-in-out; 
+  display: inline-block;
+  text-decoration: none;
+}
+
+.interactive-btn:hover {
+  background-color: #1e1e1e;
+  box-shadow: 0 0 20px 10px #00ffcc, 0 0 30px #ff00ff, 0 0 40px #00ffff; 
+  transform: scale(1.1);
+  color: #00ffff;
+  animation: pulse 1s infinite;
+}
+
+footer p {
+  color: #fff;
+  margin-top: 40px;
+  font-size: 15px;
+  text-align: center;
+  z-index: 1; 
+}
+

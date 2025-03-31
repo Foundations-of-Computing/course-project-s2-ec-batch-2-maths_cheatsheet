@@ -1,0 +1,80 @@
+body {
+  background: linear-gradient(#203a43,#2c5364);
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.equations {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.image-container {
+  flex: 0.5;
+  padding-left: 20px;
+}
+
+.side-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.equation {
+  color: rgb(217, 228, 237);
+  font-size: 23px;
+  margin-left: 20px;
+}
+
+h2 {
+  font-family: cursive;
+  font-size: 36px;
+  color: rgb(194, 158, 117);
+  text-transform: uppercase;
+}
+
+h3 {
+  color: #b2a267;
+  font-size: 29px;
+  font-family: cursive;
+}
+
+.centered-text {
+  text-align: center;
+  font-size: 25px;
+  margin-right: 600px;
+  color: aliceblue;
+}
+
+#searchBar {
+  width: 40%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+h2,h3,.centered-text,.equation,.image-container {
+  animation: fadeIn 1.5s ease-in-out;
+}
+  
+  

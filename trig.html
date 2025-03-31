@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <link rel="stylesheet" href ="trig.css">
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Trigonometry</title>
+
+</head>
+<body>
+ <header>
+ <h1>Trigonometric Identities</h1>
+ <center>
+    <input type="text" id="searchBar" placeholder="Search for a formula..." onkeyup="searchFormula()">
+</center>
+ <p>A comprehensive list of key trigonometric identities:</p>
+ </header>
+<main>
+        <section id="basic-identities">
+            <h2>Basic Trigonometric Identities</h2>
+            <ul>
+                <li><strong>sin²(x) + cos²(x) = 1</strong></li>
+                <li><strong>1 + tan²(x) = sec²(x)</strong></li>
+                <li><strong>1 + cot²(x) = csc²(x)</strong></li>
+                <li><strong>tan(x) = sin(x)/cos(x)</strong></li>
+                <li><strong>cot(x) = cos(x)/sin(x)</strong></li>
+            </ul>
+        </section>
+        <section id="sum-difference">
+            <h2>Sum and Difference Identities</h2>
+            <ul>
+                <li><strong>sin(x ± y) = sin(x)cos(y) ± cos(x)sin(y)</strong></li>
+                <li><strong>cos(x ± y) = cos(x)cos(y) ∓ sin(x)sin(y)</strong></li>
+                <li><strong>tan(x ± y) = (tan(x) ± tan(y)) / (1 ∓ tan(x)tan(y))</strong></li>
+            </ul>
+        </section>
+        <section id="double-angle">
+            <h2>Double Angle Identities</h2>
+            <ul>
+                <li><strong>sin(2x) = 2sin(x)cos(x)</strong></li>
+                <li><strong>cos(2x) = cos²(x) - sin²(x)</strong></li>
+                <li><strong>tan(2x) = 2tan(x) / (1 - tan²(x))</strong></li>
+            </ul>
+        </section>
+        <section id="half-angle">
+            <h2>Half-Angle Identities</h2>
+            <ul>
+                <li><strong>sin(x/2) = ±√[(1 - cos(x))/2]</strong></li>
+                <li><strong>cos(x/2) = ±√[(1 + cos(x))/2]</strong></li>
+                <li><strong>tan(x/2) = ±√[(1 - cos(x))/(1 + cos(x))]</strong></li>
+            </ul>
+        </section>
+        <section id="multiple-angle">
+            <h2>Multiple Angle Identities</h2>
+            <ul>
+                <li><strong>sin(3x) = 3sin(x) - 4sin³(x)</strong></li>
+                <li><strong>cos(3x) = 4cos³(x) - 3cos(x)</strong></li>
+                <li><strong>tan(3x) = (3tan(x) - tan³(x)) / (1 - 3tan²(x))</strong></li>
+            </ul>
+        </section>
+        <section id="trig-equations">
+            <h2>Trigonometric Equations</h2>
+            <ul>
+                <li><strong>sin(x) = 1/2 → x = π/6, 5π/6</strong></li>
+                <li><strong>cos(x) = -1/2 → x = 2π/3, 4π/3</strong></li>
+                <li><strong>tan(x) = 1 → x = π/4</strong></li>
+                <li><strong>sin(x) = cos(x) → x = π/4, 5π/4</strong></li>
+                <li><strong>2sin²(x) - 3 = 0 → x = π/6, 5π/6</strong></li>
+            </ul>
+        </section>
+        <section id="inverse-trig">
+            <h2>Inverse Trigonometric Equations</h2>
+            <ul>
+                <li><strong>sin⁻¹(x) + cos⁻¹(x) = π/2</strong></li>
+                <li><strong>tan⁻¹(x) + cot⁻¹(x) = π/2</strong></li>
+                <li><strong>sec⁻¹(x) + csc⁻¹(x) = π/2</strong></li>
+            </ul>
+        </section>
+
+</main>
+   </body>
+   </html>
+<script src="trig.js"></script>

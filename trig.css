@@ -1,0 +1,52 @@
+body {
+    background: linear-gradient(#203a43, #2c5364);
+    color: #ebebeb;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+p{
+    margin-right: 600px;
+    font-size: 25px;
+}
+
+h1 {
+    font-family: cursive;
+    font-size: 36px;
+    color: rgb(194, 158, 117);
+    text-transform: uppercase
+}
+
+
+h2 {
+    font-family: cursive;
+    font-size: 32px;
+    color: #b2a267;
+}
+
+ul {
+    font-size: 18px;
+}
+
+ul li {
+    margin: 10px 0;
+}
+#searchBar {
+    width: 40%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    font-size: 16px;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0px); }
+}
+
+p,h1,h2,ul,li,header,p {
+    animation: fadeIn 1.5s ease-in-out;
+}
